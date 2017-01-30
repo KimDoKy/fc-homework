@@ -1,0 +1,337 @@
+@import url(../css/base.css);
+
+
+.logo {
+  float: left;
+  margin-right: 300px;
+  padding: 0;
+}
+header {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255,255,255,0.9);
+  > br {
+    clear: both;
+  }
+}
+.top_right {
+  float: right;
+  > ul {
+    float: right;
+    > li {
+      float: left;
+    }
+  }
+  .dropbtn:hover {
+    color: #be1d2c;
+    position: relative;
+    z-index: -8;
+  }
+  .dropbtn {
+    background-color: rgba(0,0,0,0);
+    color: #222222;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .dropdown-content a {
+    color: #8b8b8b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #fff;
+  }
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+// .carousel-indicators {
+//   // float: right;
+// }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  // max-width: none !important;
+  display: block;
+  margin: auto;
+}
+.carousel-inner {
+  margin-top: 40px;
+
+  #top_slider-1 {
+    background-image: url(../image/slider-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 800px;
+  }
+  #top_slider-2 {
+    background-image: url(../image/slider-bg-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 800px;
+  }
+  #top_slider-3 {
+    background-image: url(../image/slider-bg-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 800px;
+  }
+  #top_slider-4 {
+    background-image: url(../image/slider-bg-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 800px;
+  }
+  > div > a > img {
+    width: 239px;
+  }
+}
+.carousel-inner > div {
+  > .slidetitle {
+    padding-top: 150px;
+  }
+  > .slidetitle2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.item, #top_slider-1 {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#first-slide > div > .carousel-indicators {
+  left: 98%;
+  bottom: 50%;
+  float: right;
+  width: 12px;
+  // height: 12px;
+  position: absolute;
+  margin: 0;
+  // border: 3px solid rgb(229, 229, 229);
+  border-radius: 50%;
+}
+.company {
+  background-image: url(../image/company-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  box-sizing: content-box;
+
+  .company_wrap {
+    margin: 0 auto;
+    // margin-bottom: 230px;
+    // box-sizing: content-box;
+    .company_top {
+      text-align: center;
+      a {
+        color : #be1d2c;
+        font-weight: bold;
+      }
+    }
+    .company_img {
+      width: 1220px;
+      margin-top: 30px;
+      display: block;
+      margin: auto;
+      #ceo {
+        margin-right: 100px;
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
+.business {
+  background-image: url(../image/business-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  padding-left: 10%;
+  width: 100%;
+  .carousel {
+    float: left;
+    margin-right: 30px;
+    margin-left: 2%;
+    padding: 0;
+    .carousel-inner {
+      > .item > a > img {
+        max-width: 100%;
+        height: auto;
+        // margin-top: 0;
+      }
+    }
+  }
+  .carousel > ol >li {
+    // float: right;
+  }
+  .business-text {
+    color: white;
+    margin: auto;
+    // margin-left: 50px;
+    // width: 461px;
+    line-height: 2.5;
+    // float: right;
+    > h1 {
+      font-size: 46px;
+      line-height: 46px;
+      font-weight: 400;
+    }
+    > img {
+      max-width: 100%;
+      height: auto;
+    }
+    > hr {
+      height: 0;
+    }
+    > b {
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 25px;
+    }
+  }
+}
+.secondslider {
+  // float: left;
+  > div > a > img {
+    width: 547px;
+    // float: left;
+    display: inline;
+  }
+}
+.tech {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-image: url(../image/tech-bg.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+  h4 {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 46px;
+    // width: 500px;
+    // margin: 0 auto;
+  }
+  a {
+    font-size: 21px;
+    font-weight: 700;
+    color: black;
+  }
+}
+.support {
+  background-image: url(../image/support-bg.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 120px;
+  h4 {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 46px;
+  }
+  img {
+    padding-bottom: 15px;
+  }
+  a {
+    color : #be1d2c;
+    font-weight: bold;
+  }
+  .support-img {
+
+    padding-top: 60px;
+    a:nth-child(2) {
+      padding: 100px;
+    }
+  }
+}
+
+footer {
+  background-color: #37383a;
+  nav {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin: 0 160px;
+    br {
+      clear: both;
+    }
+    ul {
+      padding-left: 40px;
+      margin: 0 8px;
+      float: left;
+      width: 184px;
+      h5 {
+        color: white;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+      }
+      li {
+        line-height: 28px;
+        a {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-size: 100%;
+          font: inherit;
+          color: #f2f2f2;
+        }
+        a:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .copy {
+    text-align: center;
+    color: white;
+  }
+}
+.fixed {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f7f7f7;
+  right: 70px;
+  bottom: 20px;
+  position: fixed;
+}
+
+.clearfix {
+  clear: both;
+  height: 140px;
+}
